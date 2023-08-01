@@ -20,9 +20,8 @@ function renderGallery() {
 
 renderGallery();
 
-
 function initLightbox() {
-  let lightbox = new SimpleLightbox('.gallery a', {
+  new SimpleLightbox('.gallery a', {
     captions: true,
     captionsData: 'alt',
     captionPosition: 'bottom',
@@ -31,4 +30,5 @@ function initLightbox() {
 }
 
 document.addEventListener('DOMContentLoaded', initLightbox);
+
 
